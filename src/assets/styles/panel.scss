@@ -1,0 +1,26 @@
+.expansion-panel {
+  &__header {
+    cursor: pointer;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  &__body {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &--expanded {
+      max-height: 1000px;
+    }
+  }
+}
+.text-left{
+  text-align: left;
+}
