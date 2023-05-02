@@ -11,12 +11,20 @@ function FrogsLife() {
           <ExpansionPanel title={x.title.value}>
           <div className="content-columns">
           <div className="column">
-          <p className="text-left">{x.panel.value}.</p>
+          <p className="text-subject">{x.panel.value}.</p>
           </div>
           <div className="column">
-          <img src={x.panel.image.src} alt="" />
+          <img src={x.panel.image.src} className="image-panel" alt={x.panel.image.title} />
           </div>
         </div>
+         {/* <div className="row">
+          <div className="col-sm-6">
+            <p>Column 1</p>
+          </div>
+          <div className="col-sm-6">
+            <p>Column 2</p>
+          </div>
+        </div> */}
           </ExpansionPanel>
         </div>
       ))}

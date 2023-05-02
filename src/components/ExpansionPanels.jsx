@@ -9,9 +9,14 @@ function ExpansionPanel({ title, children }) {
 
   return (
     <div className="expansion-panel">
-      <div className="panel-header" onClick={togglePanel}>
+      <div
+        className="panel-header"
+        onClick={togglePanel}
+        aria-labelledby="panel-header"
+        aria-expanded={expanded}
+      >
         <h1 className="panel-title">{title}</h1>
-        <span className={`arrow-icon ${expanded ? "expanded" : ""}`} />
+        <span className={`arrow-icon ${expanded ? "expanded" : "bottom"}`} />
       </div>
       <div
         className={`expansion-panel--body ${
