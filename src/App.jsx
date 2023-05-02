@@ -1,4 +1,4 @@
-import "../src/assets/styles/app.scss";
+import "../src/assets/styles/app.scss"
 import FrogsLife from "./components/PanelSections.jsx";
 
 function App() {
