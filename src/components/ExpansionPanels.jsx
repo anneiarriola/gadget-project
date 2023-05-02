@@ -12,8 +12,14 @@ function ExpansionPanel({ title, children }) {
       <div
         className="panel-header"
         onClick={togglePanel}
-        aria-labelledby="panel-header"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            togglePanel();
+          }
+        }}
         aria-expanded={expanded}
+        tabIndex="0"
       >
         <h1 className="panel-title">{title}</h1>
         <span className={`arrow-icon ${expanded ? "expanded" : "bottom"}`} />

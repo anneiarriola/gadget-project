@@ -17,14 +17,6 @@ function FrogsLife() {
           <img src={x.panel.image.src} className="image-panel" alt={x.panel.image.title} />
           </div>
         </div>
-         {/* <div className="row">
-          <div className="col-sm-6">
-            <p>Column 1</p>
-          </div>
-          <div className="col-sm-6">
-            <p>Column 2</p>
-          </div>
-        </div> */}
           </ExpansionPanel>
         </div>
       ))}
