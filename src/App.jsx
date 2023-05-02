@@ -1,10 +1,14 @@
-import './App.css';
-import FrogsLife from './components/PanelSections.jsx'
+import "../src/assets/styles/app.scss";
+import FrogsLife from "./components/PanelSections.jsx";
 
 function App() {
   return (
     <div className="App">
-      <FrogsLife/>
+      <div className="container">
+        <div className="row">
+          <FrogsLife />
+        </div>
+      </div>
     </div>
   );
 }

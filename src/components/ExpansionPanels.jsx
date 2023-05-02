@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../assets/styles/panel.scss'
+import React, { useState } from "react";
+import "../assets/styles/panel.scss";
 function ExpansionPanel({ title, children }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -9,12 +9,13 @@ function ExpansionPanel({ title, children }) {
 
   return (
     <div className="expansion-panel">
-      <div className="expansion-panel__header" onClick={togglePanel}>
-        {title}
+      <div className="panel-header" onClick={togglePanel}>
+        <h1 className="panel-title">{title}</h1>
+        <span className={`arrow-icon ${expanded ? "expanded" : ""}`} />
       </div>
       <div
-        className={`expansion-panel__body ${
-          expanded ? 'expansion-panel__body--expanded' : ''
+        className={`expansion-panel--body ${
+          expanded ? "expansion-panel--body--expanded" : ""
         }`}
       >
         {children}

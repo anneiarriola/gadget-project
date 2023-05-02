@@ -1,0 +1,33 @@
+$container-width: 1140px;
+$gutter: 15px;
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 $gutter;
+  max-width: $container-width;
+  width: 100%;
+}
+
+// @mixin row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0 -$gutter;
+// }
+
+// @mixin column($columns) {
+//   flex-basis: 100% / 12 * $columns;
+//   max-width: 100% / 12 * $columns;
+//   padding: 0 $gutter;
+// }
+
+.container {
+  @include container;
+}
+
+// .row {
+//   @include row;
+// }
+
+// .col-6 {
+//   @include column(6);
+// }
