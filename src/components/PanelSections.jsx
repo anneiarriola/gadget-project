@@ -1,6 +1,5 @@
 import React from "react";
 import data from "../services/frogs.json";
-// import "../src/assets/styles/panel.scss"
 import ExpansionPanel from "./ExpansionPanels";
 
 function FrogsLife() {
@@ -11,7 +10,7 @@ function FrogsLife() {
           <ExpansionPanel title={x.title.value}>
           <div className="content-columns">
           <div className="column">
-          <p className="text-subject">{x.panel.value}.</p>
+          <p className="text-subject">{x.panel.value}</p>
           </div>
           <div className="column">
           <img src={x.panel.image.src} className="image-panel" alt={x.panel.image.title} />
